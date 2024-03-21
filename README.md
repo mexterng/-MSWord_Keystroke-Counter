@@ -5,7 +5,7 @@ Mit Hilfe eines Makros für Microsoft-Word können die Tastaturanschläge pro Ze
 # Voraussetzungen
 - **Software**
     - Microsoft Word (getestet ab Version 2010)
-- **Dokumentenaufbau**
+- **Dokumentenaufbau (siehe KeystrokeCounter_Template.docx)**
     - Das Dokument muss mindestens zwei Tabellen enthalten. Die zweite Tabelle sollte eine Zeile und zwei Spalten haben.
     - Der zu untersuchende Text muss in der zweiten Tabelle in der ersten Spalte/Zelle eingetragen werden. In die zweite Spalte/Zelle werden die Anschlagszahlen eingetragen.
 
