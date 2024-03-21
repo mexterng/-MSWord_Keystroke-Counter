@@ -105,17 +105,9 @@ Private Sub writeKeystrokesToTable(keystrokesList As Collection)
     Next i
 End Sub
 Private Function getKeystrokeFromCharacter(character As String)
-    Dim keystrokeValue As Integer
-    If character Like "[a-z]" Then
-        getKeystrokeFromCharacter = 1
-    ElseIf character Like "[A-Z]" Then
+    If character Like "[A-Z]" Or isDoubleKeystroke(character) Then
         getKeystrokeFromCharacter = 2
     Else
-        If isDoubleKeystroke(character) Then
-            getKeystrokeFromCharacter = 2
-        Else
-            getKeystrokeFromCharacter = 1
-        End If
+        getKeystrokeFromCharacter = 1
     End If
 End Function
-
