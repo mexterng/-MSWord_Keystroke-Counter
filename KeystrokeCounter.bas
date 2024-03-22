@@ -33,7 +33,7 @@ Sub countKeystrokes()
 End Sub
 Private Function checkUpIgnoreLineBreak() As Boolean
     Dim antwort As VbMsgBoxResult
-    antwort = MsgBox("M chten Sie Zeilenumbr che (Abs tze) ignorieren?", vbYesNo, "Best tigung")
+    antwort = MsgBox("Möchten Sie Zeilenumbrüche (Absätze) ignorieren?", vbYesNo, "Bestätigung")
     
     If antwort = vbYes Then
         checkUpIgnoreLineBreak = True
@@ -43,7 +43,7 @@ Private Function checkUpIgnoreLineBreak() As Boolean
 End Function
 Private Function isDoubleKeystroke(character As String) As Boolean
     ' add all characters with double keystroke in  list
-    doubleKeystrokes = Array(" ", "!", """", " ", "$", "%", "&", "/", "(", ")", "=", "?", "*", ">", ";", ":", "_", "@", "|", "'")
+    doubleKeystrokes = Array("°", "!", """", "§", "$", "%", "&", "/", "(", ")", "=", "?", "*", ">", ";", ":", "_", "@", "|", "'")
     For i = LBound(doubleKeystrokes) To UBound(doubleKeystrokes)
         If doubleKeystrokes(i) = character Then
             isDoubleKeystroke = True
