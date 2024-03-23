@@ -43,7 +43,7 @@ Private Function checkUpIgnoreLineBreak() As Boolean
 End Function
 Private Function isDoubleKeystroke(character As String) As Boolean
     ' add all characters with double keystroke in  list
-    doubleKeystrokes = Array("°", "!", """", "§", "$", "%", "&", "/", "(", ")", "=", "?", "*", ">", ";", ":", "_", "@", "|", "'")
+    doubleKeystrokes = Array("€", "\", "{", "[", "]", "}", "²", "³", "°", "!", """", "§", "$", "%", "&", "/", "(", ")", "=", "?", "*", ">", ";", ":", "_", "@", "|", "'")
     For i = LBound(doubleKeystrokes) To UBound(doubleKeystrokes)
         If doubleKeystrokes(i) = character Then
             isDoubleKeystroke = True
@@ -105,7 +105,9 @@ Private Sub writeKeystrokesToTable(keystrokesList As Collection)
     Next i
 End Sub
 Private Function getKeystrokeFromCharacter(character As String)
-    If character Like "[A-Z]" Or isDoubleKeystroke(character) Then
+    If character = "…" Then
+       getKeystrokeFromCharacter = 3
+    ElseIf character Like "[A-Z]" Or isDoubleKeystroke(character) Then
         getKeystrokeFromCharacter = 2
     Else
         getKeystrokeFromCharacter = 1
