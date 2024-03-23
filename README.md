@@ -21,6 +21,9 @@ Mit Hilfe eines Makros für Microsoft-Word können die Tastaturanschläge pro Ze
     Wordoptionen ⇒ Menüband anpassen ⇒ Befehle auswählen: Makros ⇒ gewünschte Registerkarte und Gruppe auswählen.
     (Ggf. Beschriftung und Icon anpassen) z. B.  
     ![grafik](https://github.com/mexterng/MSWord_Keystroke-Counter/assets/16732689/6be5b0ea-0c61-4581-8a52-b4b8acab78e2)
+
+- **Alternative: KeystrokeCounter_Template.docm**
+    Direkte Verwendung über die Vorlagendatei inklusive Button für Makroausfürhung (.docm) 
    
 
 # Verwendung
